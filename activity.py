@@ -29,9 +29,17 @@ def increaser(num1):
 doubler = increaser(2)
 print(doubler(3))
 
-def fave_language(language):
-	print(f'Hello World, I can speak {language} language!')
-fave_language(language="English")
-fave_language(language="Spanish")
-fave_language(language="Japanese")
+language = input("Please input a language\n")
+
+def translate_hello(chosen_language):
+    if chosen_language == "French":
+        print("Bonjour le monde")
+    elif chosen_language == "Spanish" :
+        print("Hola Mundo")
+    elif chosen_language == "Japanese":
+        print("Kon'nichiwa sekai")
+    else:
+        print("Please input a valid language")
+
+translate_hello(language)
 
